@@ -7,6 +7,14 @@ const AuthForm = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const multiplier = (num) => {
+    return num*2;
+  };
+
+  const divider = (num) => {
+    return num/2;
+  };
+  
   return (
     <>
       <Spacer>
